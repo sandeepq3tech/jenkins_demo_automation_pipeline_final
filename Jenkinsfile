@@ -2,14 +2,12 @@ pipeline {
     agent any
      tools {
         maven 'Maven'
-        jdk 'jdk8'
         }
     stages {
         stage("Test"){
             steps{
                 // mvn test
                  bat "mvn test"
-           
             }
             
         }
