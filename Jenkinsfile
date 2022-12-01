@@ -7,7 +7,7 @@ pipeline {
         stage("Test"){
             steps{
                 // mvn test
-                batch "mvn test"
+                bat """mvn test"""
                 
                 
             }
@@ -15,7 +15,7 @@ pipeline {
         }
         stage("Build"){
             steps{
-                batch "mvn package"
+                bat """mvn package"""
                 
             }
             
