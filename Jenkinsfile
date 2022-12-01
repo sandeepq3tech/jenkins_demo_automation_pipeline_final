@@ -7,7 +7,7 @@ pipeline {
         stage("Test"){
             steps{
                 // mvn test
-                 bat "-- mvn test"
+                 bat "--mvn test"
            
             }
             
