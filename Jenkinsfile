@@ -7,15 +7,14 @@ pipeline {
         stage("Test"){
             steps{
                 // mvn test
-               // bat 'mvn test'
-                
-                
+                 bat "mvn test"
+           
             }
             
         }
         stage("Build"){
             steps{
-                bat 'mvn package'
+                bat "mvn package"
                 
             }
             
