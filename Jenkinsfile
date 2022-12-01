@@ -7,8 +7,8 @@ pipeline {
         stage("Test"){
             steps{
                 // mvn test
-                sh "mvn test"
-                slackSend channel: 'youtubejenkins', message: 'Job Started'
+                bat "mvn test"
+                //slackSend channel: 'youtubejenkins', message: 'Job Started'
                 
             }
             
